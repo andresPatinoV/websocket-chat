@@ -20,6 +20,6 @@ async def chat_server(websocket, path):
         clientes.remove(websocket)
 
 if __name__ == "__main__":
-    start_server = websockets.serve(chat_server, "localhost", 8300)
+    start_server = websockets.serve(chat_server, "3.142.80.86", 8300)
     asyncio.get_event_loop().run_until_complete(start_server)
     asyncio.get_event_loop().run_forever()
